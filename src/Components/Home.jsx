@@ -45,7 +45,7 @@ export default function Home() {
               </Link>
             </li>
             <li className="link">
-              <Link to="Services" smooth={true}>
+              <Link to="Expertise" smooth={true}>
                 Services
               </Link>
             </li>
