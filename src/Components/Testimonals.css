@@ -1,0 +1,183 @@
+/* Testimonials.css */
+.testimonials-container {
+  text-align: center;
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Lato", sans-serif;
+  margin-top: 2vw;
+}
+
+.testimonial {
+  position: relative;
+}
+#test-head h1 {
+  font-size: 2rem;
+  text-align: center;
+  color: #0066ff;
+}
+#test-head p {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #777;
+}
+
+.testimonial-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid #0066ffbe; /* White border around the image */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow for a subtle effect */
+  margin-bottom: 20px;
+  object-fit: cover; /* Ensure the image covers the entire container */
+}
+
+.testimonial-text {
+  margin-bottom: 10px;
+}
+
+.testimonial-author {
+  font-style: italic;
+  color: #777;
+}
+
+/* Optional: Add styles for a carousel effect */
+.testimonial {
+  overflow: hidden;
+}
+
+.testimonial-text {
+  max-height: 150px;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+#test-head h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Lato", sans-serif;
+}
+.star {
+  color: #ffd700; /* Golden color for the stars */
+}
+#test-mid {
+  text-align: center;
+  max-width: 1400px;
+  min-height: 10vw;
+  position: relative;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: space-around;
+  font-family: "Lato", sans-serif;
+  border: 1px solid #0066ff;
+  background-color: #0066ff1b;
+  margin-top: 2vw;
+}
+
+#test-mid > div {
+  flex: 1;
+  text-align: center;
+  position: relative;
+}
+
+#test-mid > div:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  height: 80%;
+  width: 1px;
+  background-color: #0066ff;
+  top: 10%;
+  right: 0;
+}
+
+#icon {
+  font-size: 2.6rem;
+}
+
+#part1 p {
+  font-size: 3rem;
+}
+#part2 p {
+  font-size: 3rem;
+}
+#part3 p {
+  font-size: 3rem;
+}
+#part1 h3 {
+  font-size: 1.6rem;
+  line-height: 1px;
+}
+#part1 h4 {
+  font-size: 1rem;
+  line-height: 1px;
+  color: #777;
+}
+#part2 h3 {
+  font-size: 1.6rem;
+  line-height: 1px;
+}
+#part2 h4 {
+  font-size: 1rem;
+  line-height: 1px;
+  color: #777;
+}
+#part3 h3 {
+  font-size: 1.6rem;
+  line-height: 1px;
+}
+#part3 h4 {
+  font-size: 1rem;
+  line-height: 1px;
+  color: #777;
+}
+@media screen and (max-width: 768px) {
+  #icon {
+    font-size: 2rem;
+  }
+  #part1 p {
+    font-size: 1.5rem;
+  }
+  #part2 p {
+    font-size: 1.5rem;
+  }
+  #part3 p {
+    font-size: 1.5rem;
+  }
+  #part1 h3 {
+    font-size: 0.8rem;
+    line-height: 1px;
+  }
+  #part1 h4 {
+    font-size: 0.6rem;
+    line-height: 1px;
+    color: #777;
+  }
+  #part2 h3 {
+    font-size: 0.8rem;
+    line-height: 1px;
+  }
+  #part2 h4 {
+    font-size: 0.6rem;
+    line-height: 1px;
+    color: #777;
+  }
+  #part3 h3 {
+    font-size: 0.8rem;
+    line-height: 1px;
+  }
+  #part3 h4 {
+    font-size: 0.6rem;
+    line-height: 1px;
+    color: #777;
+  }
+}
+Swiper {
+  min-width: 100%;
+  min-height: 100%;
+}
+.swiper-wrapper {
+  padding: 0vw 2vw;
+}

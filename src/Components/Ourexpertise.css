@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight&family=Lato:wght@400;700&family=PT+Serif:ital,wght@0,400;1,700&family=Roboto+Serif:opsz@8..144&family=Roboto:ital,wght@0,300;1,300&display=swap");
+
+#Expertise {
+  max-width: 1200px; /* Adjust the maximum width as needed */
+  margin: 8vw auto; /* Center the container on the page */
+  height: auto;
+  width: 100%;
+  font-family: "Lato", sans-serif;
+  position: relative;
+  margin-top: 8vw;
+}
+
+#Expertise h1 {
+  font-size: 2rem;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+#exp_options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0vw 2vw;
+  column-gap: 5vw;
+}
+
+#exp_options #right,
+#exp_options #left {
+  max-height: 30vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+#exp_options #right #R_first,
+#exp_options #right #R_second,
+#exp_options #left #L_first,
+#exp_options #left #L_second {
+  width: 100%;
+  height: 100%;
+  background-color: #efefef;
+  position: relative;
+  padding: 2px;
+}
+
+#exp_options #right #R_first img,
+#exp_options #left #L_first img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+#exp_options #right #R_first h3 {
+  text-align: start;
+  font-size: 1.5rem;
+}
+
+#exp_options #right #R_first p {
+  text-align: justify;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 900px) {
+  #exp_options {
+    flex-direction: row;
+  }
+
+  #exp_options #right,
+  #exp_options #left {
+    flex-direction: row;
+    width: 50%;
+    height: 20vh;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #exp_options {
+    flex-direction: column;
+  }
+
+  #exp_options #right,
+  #exp_options #left {
+    width: 100%;
+  }
+  #Expertise {
+    min-height: 100vh;
+  }
+}

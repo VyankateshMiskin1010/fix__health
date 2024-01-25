@@ -1,0 +1,154 @@
+.booking-form-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 81%;
+  margin: auto;
+  padding: 5vw;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+h2 {
+  font-size: 2rem;
+  color: #0067ff;
+}
+
+.form-container {
+  flex: 1;
+  margin-bottom: 20px;
+  background-color: #0066ff1b;
+  padding: 1vw;
+}
+
+.form-group {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+label {
+  flex: 1;
+  margin-right: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  background-color: #0067ff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005bb5;
+}
+
+.results-container {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.results-container h3 {
+  color: #0067ff;
+}
+
+.doctors-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.doctor-names-column {
+  flex: 1;
+  margin-right: 0;
+}
+
+.doctor-names-column h3 {
+  margin-bottom: 10px;
+  color: #0067ff;
+}
+
+.doctor-names-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.doctor-names-column li {
+  cursor: pointer;
+  padding: 8px;
+  margin-bottom: 8px;
+  background-color: #e6e6e6;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+li:hover {
+  background-color: #d9d9d9;
+}
+
+li.selected {
+  background-color: #0067ff;
+  color: #fff;
+}
+
+.selected-doctor-details {
+  flex: 1;
+}
+
+.doctor-image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.doctor-details {
+  text-align: left;
+  color: #333;
+}
+
+@media screen and (max-width: 768px) {
+  .booking-form-container {
+    flex-direction: column;
+  }
+
+  .form-container,
+  .doctor-names-column {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .results-container {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+  }
+
+  button {
+    width: 100%;
+  }
+}

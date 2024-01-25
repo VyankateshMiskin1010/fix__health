@@ -1,0 +1,54 @@
+/* Ourmethadology.css */
+
+#meta-con {
+  min-height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#meta-heading h1 {
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Center cards horizontally in the container */
+  position: relative;
+}
+
+.card {
+  width: 100%; /* Adjust the width as needed */
+  min-width: 250px; /* Set a maximum width if necessary */
+  min-height: 250px; /* Adjust the height as needed */
+  border: 1px solid #ddd;
+  padding: 16px;
+  margin: 8px 2vw; /* Add margin from left and right */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-family: "Lato", sans-serif;
+}
+.card h2 {
+  color: #0067ff;
+  font-family: "Lato", sans-serif;
+}
+
+.card img {
+  width: 100%; /* Make sure the image takes the full width of the card */
+  height: auto; /* Maintain aspect ratio */
+}
+@media screen and (max-width: 800px) {
+  .card-container {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 90%; /* Adjust the width as needed */
+    min-width: 250px; /* Set a maximum width if necessary */
+  }
+}

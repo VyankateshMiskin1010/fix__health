@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight&family=Lato:wght@400;700&family=PT+Serif:ital,wght@0,400;1,700&family=Roboto+Serif:opsz@8..144&family=Roboto:ital,wght@0,300;1,300&display=swap");
+header {
+  min-height: 100vh;
+  width: 100%;
+  font-family: "Lato", sans-serif;
+  position: relative;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: #ebebeb;
+  background-image: url("https://images.unsplash.com/photo-1524863479829-916d8e77f114?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nav__container {
+  padding: 2vw 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: black;
+}
+
+.nav__logo span {
+  color: #0067ff;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.link {
+  padding: 0.5rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.link :hover {
+  cursor: pointer;
+  color: #0067ff;
+}
+
+/* Responsive Styles */
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .nav__container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+  }
+
+  .nav__logo {
+    margin-bottom: 1rem;
+  }
+
+  .menu-btn {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px; /* Adjust the width as needed */
+    height: 30px; /* Adjust the height as needed */
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  .bar {
+    width: 100%;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: 0.3s;
+  }
+
+  .menu-btn.open .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .menu-btn.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-btn.open .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .mob__links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .mob__links.show {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+    display: flex; /* Show the menu options when this class is applied */
+  }
+
+  .mob__links a {
+    padding: 0.5rem;
+    color: rgba(0, 0, 0, 0.7);
+    display: block;
+  }
+
+  .mob__links.show a {
+    padding: 0.5rem;
+    color: rgba(0, 0, 0, 0.7);
+    display: block;
+  }
+
+  .btn {
+    margin-top: 1rem;
+  }
+  .nav__links {
+    display: none;
+  }
+}
+
+.mob__links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  display: none; /* Add this line to hide the menu initially */
+}
+
+/* Add a class to show the menu options when needed */
+.mob__links.show {
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem;
+  display: flex; /* Show the menu options when this class is applied */
+}
+
+/* Part 2 */
+#head-text {
+  padding: 0vw 2vw 0vw 2vw;
+  width: 100%;
+}
+#head-text h1 {
+  font-family: "Lato", sans-serif;
+  font-size: 8vw;
+  line-height: 9vw;
+  margin-top: 1vw;
+  /* color: rgba(0, 0, 0, 0.9); */
+  color: rgba(255, 255, 255, 0.889);
+}
+#dot {
+  display: inline-block;
+  width: 1vw; /* Adjust the size of the circle as needed */
+  height: 1vw; /* Same as the width for a perfect circle */
+  background-color: #0067ff; /* Set your desired background color */
+  border-radius: 50%; /* Make the square a circle by setting border-radius to 50% */
+}
+#head-para {
+  max-width: 500px;
+  color: rgba(255, 255, 255, 0.664);
+  font-family: "Lato", sans-serif;
+}
+#head-para button {
+  background-color: #0067ff;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  padding: 0.9rem 2rem;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-size: inherit;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 0.05rem;
+  font-weight: 700;
+  font-size: 17px;
+  border-radius: 500px;
+  overflow: hidden;
+  background: #0067ff;
+  color: ghostwhite;
+}
+
+button span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+}
+
+@media screen and (max-width: 800px) {
+  #head-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    margin: 1vw;
+  }
+}
+#text_slider {
+  max-height: 15vw;
+  height: 14vh;
+  width: 100%;
+  background-color: #0067ff;
+  color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* column-gap: 5vw; */
+  border-radius: 50px;
+  margin-top: 3vw;
+}
+#text_slider h2 {
+  font-size: 3vw;
+  font-family: "Lato", sans-serif;
+  padding: 0vw 2vw 0vw 2vw;
+  font-weight: 200;
+  color: rgb(255, 255, 255);
+}
+#plus {
+  font-size: 3vw;
+  color: rgba(0, 0, 0, 0.392);
+  font-weight: 600;
+}
